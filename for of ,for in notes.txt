@@ -1,0 +1,20 @@
+
+set , strings, map,  array: for of
+for(let n of set2){
+                console.log(n)
+        
+    }
+
+
+object: for in
+const person = { name: "Alice", age: 25 };
+for (const key in person) {
+  console.log(key); // "name", "age"
+  console.log(person[key]); // "Alice", 25
+}
+
+
+
+1in call back function just call functions with names and without brackets
+2.queryselecter
+3.settimeout

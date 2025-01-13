@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>currency converter</title>
+    </head>
+    <style>
+        #main{
+            
+            display: flex;
+           align-items: center;
+            justify-content:space-around;
+            
+        }
+        #result{
+            background-color: rgb(250, 250, 253);
+            height: 20px;
+            width: 59px;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+            
+        }
+        #container{
+            background-color: rgb(251, 247, 11);
+            height: 400px;
+            width:400px;
+            margin-top: 150px;
+            
+
+        }.codes{
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 50px;
+            background-color: blue;
+            font-family: cursive;
+            color: azure;
+        }
+        #input{
+            width: 60px;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+#btn{
+    padding: 10px;
+    margin-top: 50px;
+    background-color: blue;
+    font-family: cursive;
+    color: azure;
+    border-radius: 10px;
+}
+        
+    </style>
+    <body>
+        <center>
+            <div id="container">
+                <br>
+                <h3><i>currency converter</i></h3>
+            <div id="main">
+
+                 <div id="left">
+                  <select class="codes">    
+                  </select>
+                  <div>
+                  <input id="input" >
+                </div>
+                 </div>
+<div id="right">
+    <select class="codes">
+        
+      </select>
+      <div id="result">
+
+      </div>
+</div>
+            </div>
+            
+            <button id="btn">click</button>
+        </div>
+        </center>
+        <script>
+let val=document.getElementsByClassName("codes")  
+let ip=document.getElementById("input")  
+let btn=document.getElementById("btn") 
+//let rel=document.getElementById("result");
+fetch('https://api.frankfurter.app/currencies')
+.then((res)=>res.json())
+.then((data)=>setvalue(data))
+
+function setvalue(data){
+    let curr = Object.entries(data)
+    
+    for(let i=0;i<curr.length;i++){
+        let vv=curr[i][0]
+      let yy=`<option value=${vv}>${vv}</option>`
+        val[0].innerHTML+=yy
+        val[1].innerHTML+=yy    
+        // for input tag instead of innerhtml we will use .value   
+    }
+}
+
+btn.addEventListener('click',()=>{
+let left=val[0].value;
+let right=val[1].value;
+let ipp=ip.value;
+if(left===right){
+alert("give diff option");
+return;
+}
+else{
+convert(left,right,ipp)
+}
+})
+
+function convert(left,right,ipp){
+    const host = 'api.frankfurter.app';
+  fetch(`https://${host}/latest?amount=${ipp}&from=${left}&to=${right}`)
+  .then((res)=>res.json())
+  .then((data)=>{
+    document.getElementById("result").innerHTML=Object.values(data.rates)[0]
+
+//     rates has only one key-value pair: "EUR": 85.0.
+// Object.values(data.rates) will return [85.0].
+// Object.values(data.rates)[0] will give 85.0.
+  })
+}
+
+
+</script>
+    </body>
+</html>
