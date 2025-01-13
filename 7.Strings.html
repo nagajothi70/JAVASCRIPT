@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MATH FUNCTIONS</title>
+</head>
+<body>
+    <center>
+        <h1> LETS SEE ABOUT STRINGS</h1>
+        <hr>
+        <p><mark>1.add two strings</mark>
+        <br>
+    i.str1+str2<br>
+ii.str1.concat(str2)<br>
+output:'hi i am fine how are you?too good happy to see you here!'<br>
+<hr></p>
+
+<p><mark>2.add two strings with additional </mark>
+    <br>
+
+i.str1.concat("------",str2)<br>
+output:'hi i am fine how are you?------too good happy to see you here!'<br>
+<hr></p>
+
+<p><mark>3.slice(start,end)</mark>
+    <br>
+str1.slice(4,10)<br>
+output:i am fi<br>
+<hr></p>
+
+<p><mark>4.slice(start)</mark>
+    <br>
+str1.slice(4)<br>
+output:i am fine how are you?<br>
+<hr></p>
+
+<p><mark>5.slice(-value)</mark>
+    <br>
+str1.slice(-5)<br>
+output: you?<br>
+<hr></p>
+<p><mark>6.substring()</mark>
+    <br>
+    this is same as slice<br>
+i.str1.substring(4,10)<br>
+output:i am fi<br>
+ii.str1.substring(4)<br>
+output:i am fine how are you?<br>
+iii.str1.substring(-5)<br>
+output: you?<br>
+
+<hr></p>
+        
+<p><mark>7.substr(start,length)</mark>
+    <br>
+    this returns the string from start to number of char of length
+str1.substr(4,10)<br>
+output: i am fine <br>
+<hr></p>
+<p><mark>8.replace()</mark>
+    <br>
+str1.replace("hi","hello")<br>
+i.str1.replaceAll("hi","hello")// replace all hi to hello<br>
+output: hello i am fine how are you?<br>
+<hr></p>
+<p><mark>9.toUpperCase()</mark>
+    <br>
+str1.toUpperCase()<br>
+output: HI I AM FINE HOW ARE YOU?<br>
+<hr></p>
+<p><mark>10.toLowerCase()</mark>
+    <br>
+str1.toLowerCase()<br>
+output: hi i am fine how are you?<br>
+<hr></p>
+<p><mark>11.Length()</mark>
+    <br>
+str1.length()<br>
+output: 25<br>
+<hr></p>
+
+<p><mark>12.trim()</mark>
+    <br>
+    if there is any blank space it will be removed
+str1.trim()<br>
+i.str1.trimStart();
+ii.trimEnd();
+output: hi i am fine how are you?<br>
+<hr></p>
+<p><mark>13.padEnd()</mark>
+    <br>
+    will fill the given num till the length attains<br>
+    example:let bill="rs.10"
+str1.padEnd(7,"0")<br>
+output: rs.1000<br>
+str1.padStart(7,"0")<br>
+output: 00rs.10
+<hr></p>
+<p><mark>14.str[]</mark>
+    <br>
+str1[0]<br>
+output: h<br>
+<hr></p>
+<p><mark>15.str.charAt[]</mark>
+    <br>
+str1.charAt[0]<br>
+output: h<br>
+<hr></p>
+<p><mark>16.str.charCodeAt[]</mark>
+    <br>
+str1.charCodeAt[0]<br>
+output: unicode of that char<br>
+<hr></p>
+<p><mark>17.str.indexOf()</mark>
+    <br>
+str1.indexOf("i")<br>
+output: 2(index of first appearing i<br>
+i.str1.lastIndexOf("o")//o/p:-3(index of last appearing o)
+<br>if not found return -1<br>
+<hr></p>
+
+<p><mark>18.search()</mark>
+    <br>
+str1.search("fine")<br>
+output: 9(index of first char in search key)<br>
+<br>if not found return -1<br>
+<hr></p>
+<p><mark>19.includes()</mark>
+    <br>
+str1.includes("fine")<br>
+output: true<br>
+<br>if not found return false<br>
+<hr></p>
+<p><mark>20.startsWith()</mark>
+    <br>
+str1.startsWith("h")<br>
+output: true<br>
+<br>if not found return false<br>
+<hr></p>
+<p><mark>21.endsWith()</mark>
+    <br>
+str1.endsWith("h")<br>
+output: false<br>
+<br>if not found return false<br>
+<hr></p>
+
+<h3><mark> All these string functions can be practiced in console</mark></h3>
+    </center>
+    <script>
+        let str1="hi i am fine how are you?"
+        let str2="too good happy to see you here!"
+    </script>
+</body>
+</html>
