@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>DOM</title>
+</head>
+
+<body>
+ 
+<h1><mark> lets see about DOM using by Id , class , classname</mark></h1>
+<hr>
+<h1> this is DOM using id</h1>
+<div id="hoi"></div>
+
+<script>
+var hi=document.getElementById("hoi")
+hi.innerHTML="hi everyone"
+</script>
+
+
+<hr>
+
+<h1> this is DOM using  class</h1>
+<div class="one"> </div>
+<script >
+var hi = document.getElementsByClassName("one")
+hi[0].innerHTML="hi hello"
+</script> 
+
+<hr>
+
+<h1> this is DOM using tag name </h1>
+<p>hi </p>
+<p>guys</p>
+<br>
+<script>
+var hi=document.getElementsByTagName("p");
+hi[0].innerHTML="hii i am nagajothi"
+</script>
+<hr>
+
+</body>
+</html>
+
