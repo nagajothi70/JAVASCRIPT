@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(197, 154, 238);
+            }
+        </style>
+    </head>
+<body>
+<h2>HTML Form with JavaScript Interaction</h2>
+
+<fieldset>
+<legend>Registration Form</legend>
+<form id="registrationForm">
+
+    <!-- First Name -->
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname" name="firstname" placeholder="Enter your name"><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter a password"><br>
+
+    <!-- Date -->
+    <label for="date">Select Date:</label><br>
+    <input type="date" id="date" name="date"><br>
+
+    <!-- Time -->
+    <label for="time">Select Time:</label><br>
+    <input type="time" id="time" name="time" ><br>
+
+    <!-- Dropdown -->
+    <label>Course (Dropdown):</label><br>
+    <select id="course" multiple>
+        <option value="C">C</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+    </select><br>
+
+    <!-- Textarea -->
+    <label>Enter Your Address:</label><br>
+    <textarea id="address" cols="40" rows="5" placeholder="Enter your address"></textarea><br>
+
+    <!-- Gender -->
+    Enter Your Gender:<br>
+    <input type="radio" id="female" name="gender" value="Female"> Female<br>
+    <input type="radio" id="male" name="gender" value="Male"> Male<br>
+
+    <!-- Children -->
+    What Children Do You Have:<br>
+    <input type="checkbox" id="childFemale" name="children" value="Female"> Female<br>
+    <input type="checkbox" id="childMale" name="children" value="Male"> Male<br>
+
+    <!-- File Upload -->
+    <label>Upload File:</label>
+    <input type="file" id="fileInput" multiple><br>
+
+    <!-- Color Picker -->
+    <label>Select Color:</label>
+    <input type="color" id="colorPicker"><br>
+
+    <!-- Range -->
+    <label>Adjust Volume:</label>
+    <input type="range" id="volumeRange" min="0" max="100"><br>
+
+    <!-- Date and Time -->
+    <label for="datetime">Enter Date and Time:</label>
+    <input type="datetime-local" id="datetime" name="datetime"><br>
+
+    <!-- Email -->
+    <label for="email">Enter Your Email:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <!-- Month -->
+    <label for="month">Enter Month:</label>
+    <input type="month" id="month" name="month"><br>
+
+    <!-- Number -->
+    <label for="number">Enter a Number (1 to 5):</label>
+    <input type="number" id="number" name="number" min="1" max="5"><br>
+
+    <!-- Search -->
+    <label for="search">Google Search:</label>
+    <input type="search" id="search" name="search"><br>
+
+    <!-- Telephone -->
+    <label for="tele">Enter Your Telephone No:</label>
+    <input type="tel" id="tele" name="tele" placeholder="123-45-678"><br>
+
+    <!-- Week -->
+    <label for="week">Enter Week:</label>
+    <input type="week" id="week" name="week"><br>
+
+    <!-- URL -->
+    <label for="url">Enter Your URL:</label>
+    <input type="url" id="url" name="url"><br>
+
+    <!-- Submit Button -->
+    <button type="button" id="submitButton">Submit</button>
+
+</form>
+</fieldset>
+
+<script>
+    document.getElementById('submitButton').addEventListener('click', function  add () {
+        // Get basic form values
+        const firstName = document.getElementById('firstname').value;
+        const password = document.getElementById('password').value;
+        const date = document.getElementById('date').value;
+        const time = document.getElementById('time').value;
+        const address = document.getElementById('address').value;
+        const email = document.getElementById('email').value;
+        const number = document.getElementById('number').value;
+        const color = document.getElementById('colorPicker').value;
+        const volume = document.getElementById('volumeRange').value;
+        const datetime = document.getElementById('datetime').value;
+        const month = document.getElementById('month').value;
+        const search = document.getElementById('search').value;
+        const tele = document.getElementById('tele').value;
+        const week = document.getElementById('week').value;
+        const url = document.getElementById('url').value;
+
+        // Get selected course options
+        const courseSelect = document.getElementById('course');
+        let selectedCourses = [];
+        for (let i = 0; i < courseSelect.options.length; i++) {
+            if (courseSelect.options[i].selected) {
+                selectedCourses.push(courseSelect.options[i].value);
+            }
+        }
+
+        // Get selected gender
+        let gender = '';
+        if (document.getElementById('female').checked) {
+            gender = 'Female';
+        } else if (document.getElementById('male').checked) {
+            gender = 'Male';
+        }
+
+        // Get selected children options
+        let children = [];
+        if (document.getElementById('childFemale').checked) {
+            children.push('Female');
+        }
+        if (document.getElementById('childMale').checked) {
+            children.push('Male');
+        }
+
+        // Get uploaded file names
+        const fileInput = document.getElementById('fileInput');
+        let fileNames = [];
+        for (let i = 0; i < fileInput.files.length; i++) {
+            fileNames.push(fileInput.files[i].name);
+        }
+
+        // Display collected data in the console
+        console.log('First Name:', firstName);
+        console.log('Password:', password);
+        console.log('Date:', date);
+        console.log('Time:', time);
+        console.log('Address:', address);
+        console.log('Email:', email);
+        console.log('Number:', number);
+        console.log('Color:', color);
+        console.log('Volume:', volume);
+        console.log('Date and Time:', datetime);
+        console.log('Month:', month);
+        console.log('Search:', search);
+        console.log('Telephone:', tele);
+        console.log('Week:', week);
+        console.log('URL:', url);
+        console.log('Selected Courses:', selectedCourses);
+        console.log('Gender:', gender);
+        console.log('Children:', children);
+        console.log('Uploaded Files:', fileNames);
+
+        alert('Form Data Collected! Check the console.');
+    });
+</script>
+</body>
+</html>
