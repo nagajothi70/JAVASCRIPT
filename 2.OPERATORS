@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JS BASICS</title>
+</head>
+
+<body>
+    <center>
+        <h1> LETS SEE ABOUT OPERATORS</h1>
+        <hr>
+        <h3 style="color:blue;background-color:yellow">Arithmetic Operators: +, -, *, **, /, %, ++, --  <br>
+            Assignment Operators: =, +=, -=, *=, /=, %=, **=  <br>
+            Comparison Operators: ==, ===, !=, !==, >, <, >=, <=, ?  <br>
+            Logical Operators: &&, ||, !  <br>
+            Bitwise Operators: &, |, ~, ^, <<, >>, >>>  
+            </h3>
+<hr>
+            <p> In this we have already learned about the operators , but there are some new operators like
+                <br>
+                <br>
+               <mark>1.===</mark> <br>
+                i.this is used to check equality very strictly by also considering the datatypes of both 
+                <br>ii.because if a='6' , if(a==6 ) it gives true even a is a string because of inbuilt type conversion in js<br>
+                iii.so in this case we can use === which gives false because both are diff data type
+<br>
+<br>
+<mark>2.!==</mark>
+<br>i. this is same as like === to check not eqaulity very strictly 
+            </p>
+            <p> <mark>3.>>></mark><br>
+                <br>
+               <mark> Signed Right Shift (>>):</mark>
+<br>
+                Keeps the sign bit (leftmost bit).
+                For -8, the sign bit remains 1 after shifting.
+                <br><mark>Unsigned Right Shift (>>>):</mark>
+                
+                <br>Does not preserve the sign bit.
+                Fills the leftmost bits with 0 regardless of the sign. </p>
+<hr>
+<br>
+<br>
+                <h3><mark>NOTES</mark></h3>
+                <p>1.if the number is negative to preserve the sign the left and right shift operator fills the empty places with 1<br>
+                2.if the number is positive to preserve the sign the left and right shift operator fills the empty places with 0<br></p>
+
+
+<hr>
+                <h4>  In this we have learned about <br>1.operators<br>
+                2.typeof()<br>
+            3.string to num:number()</h4>
+            <hr>
+<h2 style="background-color:red"> see the output in console</h2>
+<hr>
+<h1><mark> also there are different types</mark><h1></h1> 
+<h2>1.undefined<br>
+2.NaN-not a number<br>
+3.null<br></h2>
+            <script>
+                let  a="8"
+                console.log(typeof(a));
+let b=Number(a)
+               console.log(Number(a));
+                console.log(typeof(b));
+                // type conversions
+                // 1.String(a);
+                // 2.number(a);
+                // 3.Boolean(a);
+                let gh= 3;
+                console.log(String(gh));
+                console.log(Number(gh));
+                console.log(Boolean(gh));
+
+            </script>
+    </center>
