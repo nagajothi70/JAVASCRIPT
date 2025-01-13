@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MATH FUNCTIONS</title>
+</head>
+<body>
+    <center>
+<h1><em>LETS SEE ABOUT MATH FUNCTIONS</em></h1>
+<hr>
+<p><mark>1. Math.abs()</mark><br>
+    Returns the absolute value of a number.<br>
+
+
+console.log(Math.abs(-7)); // Output: 7<br>
+<hr>
+</p>
+<p><mark>2. Math.ceil()</mark><br>
+    Rounds a number up to the next largest integer.<br>
+
+
+    console.log(Math.ceil(4.2)); // Output: 5
+    <br>
+<hr>
+</p>
+
+<p><mark>3. Math.floor()</mark><br>
+    Rounds a number down to the largest integer less than or equal to it.<br>
+
+
+    console.log(Math.floor(4.8)); // Output: 4
+
+    <br>
+<hr>
+</p>
+<p><mark>4. Math.round()</mark><br>
+    Rounds a number to the nearest integer.<br>
+
+
+    console.log(Math.round(4.5)); // Output: 5
+    console.log(Math.round(4.4)); // Output: 4
+    
+
+    <br>
+<hr>
+</p>
+<p><mark>5. Math.max()</mark><br>
+    Returns the largest number from a set of numbers.<br>
+
+
+    console.log(Math.max(3, 5, 1, 9)); // Output: 9
+
+    
+
+    <br>
+<hr>
+</p>
+
+<p><mark>6. Math.min()</mark><br>
+    Returns the smallest number from a set of numbers.<br>
+
+
+    console.log(Math.min(3, 5, 1, 9)); // Output: 1
+
+    <br>
+<hr>
+</p>
+<p><mark>7. Math.sqrt() and Math.cbrt()</mark><br>
+    Returns the square root of a number.<br>
+
+
+    console.log(Math.sqrt(16)); // Output: 4
+    <br>
+<hr>
+</p>
+<p><mark>8. Math.pow()</mark><br>
+    Returns the result of raising a base to an exponent.<br>
+
+
+    console.log(Math.pow(2, 3)); // Output: 8 (2³)
+
+    <br>
+<hr>
+</p>
+<p><mark>9. Math.random()</mark><br>
+    Returns a pseudo-random number between 0 (inclusive) and 1 (exclusive).<br>
+
+
+    console.log(Math.random()); // Example Output: 0.458799 (varies each time)
+    <br>
+<hr>
+</p>
+<p><mark>9.Math.random() within range</mark><br>
+    To get a random integer within a range:<br>
+
+
+    console.log(Math.floor(Math.random()*end of range)+1); // Example Output: number within range (varies each time)
+
+    <br>
+<hr>
+</p>
+<p><mark>10. Math.trunc()</mark><br>
+    Returns the integer part of a number, removing any fractional digits.<br>
+
+
+    console.log(Math.trunc(4.8)); // Output: 4
+console.log(Math.trunc(-4.8)); // Output: -4
+
+
+    <br>
+<hr>
+</p><p><mark>11. Math.sign()</mark><br>
+    Returns the sign of a number: 1 for positive, -1 for negative, and 0 for zero<br>
+
+
+    console.log(Math.sign(-10)); // Output: -1
+    console.log(Math.sign(10));  // Output: 1
+    console.log(Math.sign(0));   // Output: 0
+    
+
+    <br>
+<hr>
+</p><p><mark>12. Math.log()</mark><br>
+    Returns the natural logarithm (base e) of a number.<br>
+
+
+    console.log(Math.log(10)); // Output: 2.302585092994046
+
+
+    <br>
+<hr>
+</p><p><mark>13. Math.sin(), Math.cos(), and Math.tan()</mark><br>
+    Trigonometric functions for sine, cosine, and tangent (in radians).<br>
+
+    console.log(Math.sin(Math.PI / 2)); // Output: 1
+    console.log(Math.cos(Math.PI));    // Output: -1
+    console.log(Math.tan(Math.PI / 4));// Output: 1
+    
+
+    <br>
+<hr>
+</p>
+
+<p><mark>14. Math.PI</mark><br>
+    Gives pi value<br>
+
+    console.log(Math.PI); // Output: 3.14159.....
+    <br>
+<hr>
+</p>
+
+<h3> <mark> these math functions can be practiced in console</mark></h3>
+</center>
+<script>
+
+
+</script>
+</body>
