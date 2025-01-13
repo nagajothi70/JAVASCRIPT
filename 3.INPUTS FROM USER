@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JS BASICS</title>
+</head>
+
+<body>
+    <center>
+        <h1> lets see how to get input from user using prompt</h1>
+        <br>
+        <br>
+        <p> any input from prompt will be considered as string</p>
+        </center>
+        <script>
+            let a= prompt("enter a number of tickets");
+            console.log(a);
+            console.log(typeof(a));
+            console.log(Number(a)*20 +" rs you should pay");
+        </script>
+      </body>
+      </html>
