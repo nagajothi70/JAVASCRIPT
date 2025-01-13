@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CITY STATS
+        </title>
+        <style>
+body{
+    background-color: blueviolet;
+}
+.one{
+    background-color: white;
+    height:500px;
+    width:300px;
+    margin-top: 130px;
+}
+.two{
+    margin-top: 30px;
+    padding: 7px;
+}
+.three{
+    margin: 20px;
+    padding: 6px;
+    text-align: center;
+}
+#result{
+    color: black;
+    background-color: rgb(212, 253, 8);
+    padding:6px;
+    margin:20px
+
+}
+        </style>
+    </head>
+    <body>
+        <center>
+        <div  id ="one"class="one">
+            <br>
+            <h3>view city states</h3>
+            <div class="two">
+                <select id="two" class="two">
+                    <option value="bengaluru">bengaluru</option>
+                    <option value="madurai">madurai</option> 
+                    <option value="chennai">chennai</option>
+                </select>
+                </div>
+                <div class="three">
+                    <button  style="background-color: rgb(207, 246, 11);" "submit" id ="three" class="three" onclick="clicktii()">click to view</button>
+                </div>
+
+            </div>
+            <script>
+let results=document.createElement('div')
+results.id="result";
+document.getElementById('one').appendChild(results)
+function clicktii(){
+    let r=document.getElementById("two")
+    let city=r.options[r.selectedIndex].value;
+    let population=0;
+    let  literacyRate=0;
+    let language="";
+    switch(city){
+        case "bengaluru":
+        population = 8443675;
+            literacyRate = 88.71;
+            language = 'Kannada';
+            break;
+            case "madurai":
+            population = 12442373;
+        literacyRate = 89.73;
+        language = 'Marathi';
+break;
+case "chennai":
+population = 4646732;
+           literacyRate = 90.20;
+           language = 'Tamil';
+
+           break;
+    }
+let text= `the indian city of ${city} has a popution of ${population} . language spoken is ${language
+} and literacy rate is ${literacyRate }`
+    document.getElementById("result").innerHTML=text;
+}
+            </script>
+            </center>
+    </body>
+</html>
