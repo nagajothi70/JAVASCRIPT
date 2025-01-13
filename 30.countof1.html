@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Sum LeetCode</title>
+</head>
+<body>
+    <script>
+        let count = 0;
+        function ones(hi) {
+            while (hi > 0) { // Iterate until the number becomes 0
+                count += hi & 1; // Check the least significant bit
+                hi = hi >> 1; // Right shift to process the next bit
+            }
+            return count;
+        }
+
+        let strr = 1010100011100101;
+        //let num = parseInt(strr, 2); // Convert binary string to a number
+        let sum = ones(strr);
+        console.log(sum); // Outputs the number of 1s in the binary representation
+    </script>
+</body>
+</html>
