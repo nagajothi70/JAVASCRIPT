@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> word changer</title>
+        <style>
+            body{
+                background-color: rgb(252, 249, 253);
+            }
+            #zero{
+                margin-top: 200px;
+                height: 50px;
+                width:500px;
+                font-family:cursive;
+                
+            }
+            #two{
+                padding: 6px;
+                background-color: rgb(251, 252, 251);
+            }#JI{
+                height:110px;
+                background-color: blue;
+                text-align: center;
+
+            }
+            #final{
+                margin-top: 270px;
+                height:100px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div id="JI">
+                <br>
+            <h1 id="four">TO DO LIST</h1>
+        </div>
+            <div id="zero">
+            
+                <h1 id="one" style="color:rgb(7, 7, 7)">Lets Grow Money </h1>
+                <button id="two" type="submit" onclick="print()"> subcribe</button>
+            </div>
+            <br>
+            <br>
+            <div id="final">
+                <br>
+                <h3>CopyRights @ 2024</h3>
+            </div>
+    </center>
+    <script>
+
+ function print(){
+let hi=document.getElementById("one");
+let arr=["Grow","Spend","Invest"]
+let random=Math.floor(Math.random()*arr.length);
+hi.innerHTML="Lets "+arr[random]+" Money";
+}
+    </script>
+    </body>
+</html>
