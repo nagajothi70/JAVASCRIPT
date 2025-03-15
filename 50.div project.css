@@ -1,0 +1,42 @@
+ #main{
+                height: 350px;
+                width:600px;
+                background-color: rgb(248, 249, 249);
+                margin-top: 150px;
+                border-radius: 20px;
+                
+            }
+            #result1,#result2{
+                height: 30px;
+                width:210px;
+                border-radius: 50px;
+                background-color: rgb(220, 144, 243);
+                padding: 6px;
+            }
+            #input1,#input2{
+                margin-top: 40px;
+                padding: 10px;
+                border-radius: 50px;
+                background-color: rgb(248, 110, 110);
+                font-family: cursive;
+                text-align: center;
+                
+            }
+            body{
+                background-color: rgb(1, 0, 1);
+            }
+            #box {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Add spacing between the two divs */
+     /* Center items vertically */
+    /* Adjust spacing as needed */
+    
+}
+#btn1,#btn2{
+    padding: 6px;
+    border-radius: 50px;
+    background-color: rgb(244, 248, 7);
+    color: rgb(1, 8, 14);
+    font-family: cursive;
+}
+
