@@ -1,0 +1,21 @@
+ body{
+            background-color: rgb(9, 135, 149);
+        }
+        .one{
+    height:500px;
+    width:300px;
+    background-color: rgb(236, 239, 144);
+    margin-top: 100px;
+    border-radius: 10px;
+}
+.three{
+    padding:6px;
+    margin-top: 10px;
+    
+}
+#four{
+   
+    padding: 6px;
+    margin:20px;
+
+}
