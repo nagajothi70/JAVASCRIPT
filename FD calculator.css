@@ -1,0 +1,26 @@
+body{
+                background-color: aquamarine;
+            }
+.one{
+    height: 400px;
+width:250px;
+margin-top: 150px;
+background-color: white;
+align-items: center;
+border-radius: 10px;
+}
+.two{
+    margin-top: 20px;
+    padding: 6px;
+    text-align: center;
+}
+.three{
+    margin-top: 20px;
+    padding: 6px;
+    text-align: center;
+
+}
+#four{
+    margin:20px;
+    padding: 6px;
+}
