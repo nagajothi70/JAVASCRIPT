@@ -2,34 +2,8 @@
 <html>
     <head>
         <title>FD calculator</title>
-        <style>
-            body{
-                background-color: aquamarine;
-            }
-.one{
-    height: 400px;
-width:250px;
-margin-top: 150px;
-background-color: white;
-align-items: center;
-border-radius: 10px;
-}
-.two{
-    margin-top: 20px;
-    padding: 6px;
-    text-align: center;
-}
-.three{
-    margin-top: 20px;
-    padding: 6px;
-    text-align: center;
+ <link rel="stylesheet" href="FD calculator.css">
 
-}
-#four{
-    margin:20px;
-    padding: 6px;
-}
-        </style>
     </head>
     <body>
         <center>
@@ -47,26 +21,7 @@ border-radius: 10px;
 </div>
         </div>
     </center>
-      
+      <script src="FD calculator.js"></script>
     </body>
-    <script>
-        function calculate(){
-            let n=document.getElementById("two").value;
-            let result=document.getElementById("four");
-            let rate=0;
-            if(n<3){
-rate=5.8;
-            }
-            else if(n>=3&&n<=6){
-                rate=6.5;
-            }
-            else if(n>=7&&n<=9){
-                rate=6.8;
-            }
-            else{
-                rate=7;
-            }
-            result.innerHTML=rate+" %";
-        }
-    </script>
+    
 </html>
