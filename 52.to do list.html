@@ -3,45 +3,10 @@
     <head>
         <title>
             to do list 
+            
         </title>
-        <style>
-            body{
-                background-color: black;
-            }
-            #main{
-                margin-top: 150px;
-                height: 500px;
-                width: 300px;
-                background-color: rgb(246, 243, 115);
-                border-radius: 10px;
-            }
-            #one{
-                
-                display: flex;
-                justify-content: space-around;
-            }#input ,#btn{
-                margin-top: 50px;
-                padding: 10px;
-                border-radius: 5px;
-                background-color: rgb(234, 223, 213);
-                font-family:cursive;
-                color: black;
-            }
-            #result{
-                color:rgb(7, 7, 7);
-    font-size:20px;  
-    margin-top:10px; 
-            }
-            #result p{
-  margin:10px 0px;
-}
+      <link rel="stylesheet" href="52.to do list.css">
 
-#result p:hover{
-  cursor: pointer;
-}
-     
-
-        </style>
     </head>
     <body>
         <center>
@@ -55,52 +20,9 @@
 
 </div>
             </div>
-            <script>
-                let input=document.getElementById("input")
-                let btn=document.getElementById("btn")
-                let result=document.getElementById("result")
-                let todos=[];
-window.onload=()=>{
-todos=JSON.parse(localStorage.getItem("todos"))||[]
- todos.forEach((todo)=>addelement(todo))
-}
-btn.addEventListener("click",()=>{
-    let task = input.value.trim(); // trim used to remove space after the enteres task
-if (task === "") {
-    alert("Please enter a valid task!");
-    return;
-}
+            
+<script src="52.to do list.html"></script>
 
-    todos.push(task);
-    localStorage.setItem('todos',JSON.stringify(todos))
-    addelement(task)
-    input.value=''
-})
-function addelement(todo){
-    let para=document.createElement("p");
-    para.innerText=todo;//for paragraph p should be used
-    result.appendChild(para)
-
-    para.addEventListener("click",()=>{
-        para.style.textDecoration='line-through'
-        remove(todo);
-    })
-para.addEventListener("dblclick",()=>{
-    result.removeChild(para) // TO REMOVE HTML ELEMENTS
-    remove(todo);
-})
-}
-function remove(todo){
-    let index=todos.indexOf(todo);
-    if(index>-1){
-    todos.splice(index,1)
-    }
-    localStorage.setItem('todos',JSON.stringify(todos))
-
-}
-
-
-            </script>
         </center>
     </body>
 </html>
