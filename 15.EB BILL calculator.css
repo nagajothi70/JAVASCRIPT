@@ -1,0 +1,31 @@
+ body{
+                background-color: rgb(228, 156, 232);
+                background-image: url("./image.png");
+                background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    
+            }
+            #one{
+                height: 400px;
+                width:270px;
+                background-color: white;
+                margin-top: 150px;
+            }
+            .two{
+                padding: 6px;
+                color: black;
+                text-align: center;
+                margin-top: 30px;
+                
+            }
+            .three{
+                padding: 6px;
+                margin-top: 10px;
+            }
+            #result{
+                color: black;
+                background-color: rgb(246, 151, 227);
+                padding: 6px;
+                margin: 30px;
+            }
